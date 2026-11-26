@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大象视频在线传媒_短视频与网络纪录片平台_大象视频节目分类与创作者</title>
+<meta name="description" content="大象视频在线传媒是聚焦短视频、网络纪录片与原创节目的视频平台，提供自然纪录、城市人文、美食探店、青年创作、知识科普等节目条目、创作者档案与更新动态，适合内容爱好者与创作者参考。">
+<meta name="keywords" content="短视频平台,网络纪录片,原创节目,创作者档案,自然纪录">
+<style>
+:root{
+  --brand:#0f4c5c;
+  --brand-2:#1b7f8c;
+  --brand-3:#2fa3a3;
+  --accent:#e8734a;
+  --accent-soft:#fdeee7;
+  --ink:#12222b;
+  --ink-2:#3d5560;
+  --ink-3:#6b8189;
+  --line:#dfe8ea;
+  --line-2:#eef3f4;
+  --bg:#f6f9f9;
+  --panel:#ffffff;
+  --panel-2:#f0f6f6;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(15,76,92,.07);
+  --shadow-lg:0 10px 30px rgba(15,76,92,.12);
+  --header-h:60px;
+  --notice-h:34px;
+  --w:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--ink)}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+:focus-visible{outline:3px solid var(--brand-3);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶公告条 ===== */
+.notice-bar{
+  position:sticky;top:0;z-index:60;
+  height:var(--notice-h);
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#eafafb;
+  font-size:13px;
+  display:flex;align-items:center;
+}
+.notice-bar .wrap{
+  max-width:var(--w);margin:0 auto;padding:0 20px;width:100%;
+  display:flex;align-items:center;gap:12px;overflow:hidden;
+}
+.notice-bar .tag{
+  flex:0 0 auto;background:var(--accent);color:#fff;
+  font-size:11px;padding:1px 8px;border-radius:20px;letter-spacing:.5px;
+}
+.notice-bar p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.notice-bar a{color:#fff;border-bottom:1px dotted rgba(255,255,255,.6)}
+
+/* ===== 吸顶页头 ===== */
+.site-header{
+  position:sticky;top:var(--notice-h);z-index:55;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  height:var(--header-h);
+}
+.site-header .wrap{
+  max-width:var(--w);margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand .logo{width:34px;height:34px;flex:0 0 auto}
+.brand .name{
+  font-size:18px;font-weight:800;color:var(--brand);letter-spacing:.5px;
+  white-space:nowrap;
+}
+.main-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;overflow:hidden}
+.main-nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:20px;
+  white-space:nowrap;
+}
+.main-nav a:hover{background:var(--panel-2);color:var(--brand)}
+.header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search-box{position:relative}
+.search-box input{
+  width:180px;padding:7px 12px;border-radius:20px;border:1px solid var(--line);
+  font-size:13px;background:var(--panel-2);color:var(--ink);
+  font-family:inherit;
+}
+.search-box input:focus{background:#fff;border-color:var(--brand-3);outline:none}
+.search-hint{
+  position:absolute;top:calc(100% + 6px);right:0;width:260px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow-lg);padding:6px;font-size:13px;display:none;
+}
+.search-hint.show{display:block}
+.search-hint .res{padding:6px 8px;border-radius:6px;color:var(--ink-2);cursor:pointer}
+.search-hint .res:hover{background:var(--panel-2);color:var(--brand)}
+.search-hint .empty{padding:8px;color:var(--ink-3)}
+.btn-ghost{
+  font-size:13px;padding:7px 16px;border-radius:20px;border:1px solid var(--brand-2);
+  color:var(--brand-2);background:#fff;cursor:pointer;font-family:inherit;
+}
+.btn-ghost:hover{background:var(--brand-2);color:#fff}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:16px;cursor:pointer;color:var(--brand)}
+
+/* ===== 通用容器 ===== */
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+.anchor-offset{scroll-margin-top:calc(var(--notice-h) + var(--header-h) + 14px)}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:
+    radial-gradient(circle at 88% 20%, rgba(47,163,163,.18), transparent 55%),
+    radial-gradient(circle at 12% 90%, rgba(232,115,74,.14), transparent 50%),
+    linear-gradient(160deg,#0d3f4c 0%,#125a68 55%,#17707c 100%);
+  color:#eafafb;position:relative;overflow:hidden;
+}
+.hero .wrap{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  padding-top:52px;padding-bottom:56px;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+  padding:4px 12px;border-radius:20px;margin-bottom:18px;
+}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:#7fe0d3}
+.hero h1{
+  font-size:42px;font-weight:900;letter-spacing:1px;color:#fff;margin-bottom:16px;
+}
+.hero p.lead{
+  font-size:16px;color:#cfe9eb;max-width:560px;margin-bottom:24px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn-primary{
+  background:var(--accent);color:#fff;padding:11px 26px;border-radius:26px;
+  font-size:15px;font-weight:600;border:none;cursor:pointer;font-family:inherit;
+  box-shadow:0 6px 18px rgba(232,115,74,.35);
+}
+.btn-primary:hover{background:#d9633b;color:#fff}
+.btn-line{
+  background:transparent;color:#eafafb;border:1px solid rgba(255,255,255,.45);
+  padding:11px 24px;border-radius:26px;font-size:15px;cursor:pointer;font-family:inherit;
+}
+.btn-line:hover{background:rgba(255,255,255,.12);color:#fff}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:#a9d3d7}
+.hero-stats strong{display:block;font-size:22px;color:#fff;font-weight:800}
+.hero-visual{position:relative;display:flex;justify-content:center}
+.hero-visual svg{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.28))}
+
+/* ===== 主布局：左侧单栏 ===== */
+.layout{
+  display:grid;grid-template-columns:220px minmax(0,1fr);gap:30px;
+  align-items:start;padding:36px 0 20px;
+}
+.side-nav{
+  position:sticky;top:calc(var(--notice-h) + var(--header-h) + 16px);
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 14px;box-shadow:var(--shadow);
+}
+.side-nav h2{
+  font-size:13px;color:var(--ink-3);font-weight:600;letter-spacing:1px;
+  margin-bottom:10px;padding-left:6px;
+}
+.side-nav ul{list-style:none;padding:0;margin:0}
+.side-nav li{margin-bottom:2px}
+.side-nav a{
+  display:block;font-size:14px;color:var(--ink-2);padding:7px 10px;border-radius:8px;
+}
+.side-nav a:hover{background:var(--panel-2);color:var(--brand)}
+.side-nav a.active{background:var(--brand);color:#fff;font-weight:600}
+.side-nav .sub{
+  font-size:12px;color:var(--ink-3);padding:2px 10px 8px;margin-top:-2px;
+}
+.main-col{min-width:0}
+
+/* ===== 板块通用 ===== */
+.section{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px 22px;margin-bottom:24px;box-shadow:var(--shadow);
+}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+  margin-bottom:18px;flex-wrap:wrap;
+}
+.section-head h2{font-size:21px;font-weight:800;color:var(--brand);letter-spacing:.5px}
+.section-head h2 .num{
+  font-size:12px;color:var(--brand-3);font-weight:700;letter-spacing:1px;
+  display:block;margin-bottom:2px;
+}
+.section-head .more{font-size:13px;color:var(--ink-3)}
+.section-sub{font-size:14px;color:var(--ink-3);margin:-8px 0 18px}
+
+/* ===== 概览 ===== */
+.overview p{font-size:15px;color:var(--ink-2);text-align:justify}
+.overview .highlight{
+  background:var(--panel-2);border-left:3px solid var(--brand-3);
+  padding:12px 16px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:14px;color:var(--ink-2);margin-top:6px;
+}
+
+/* ===== 精选卡片 ===== */
+.card-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
+}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  background:#fff;display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .type{
+  position:absolute;top:8px;left:8px;background:rgba(15,76,92,.88);color:#fff;
+  font-size:11px;padding:2px 9px;border-radius:14px;letter-spacing:.5px;
+}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.45}
+.card .desc{font-size:13px;color:var(--ink-3);line-height:1.65;margin-bottom:10px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tags span{
+  font-size:11px;color:var(--brand-2);background:var(--panel-2);
+  padding:1px 8px;border-radius:10px;
+}
+.card .meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:8px;
+}
+.card .score{color:var(--accent);font-weight:700}
+
+/* ===== 最新更新列表 ===== */
+.update-list{display:grid;grid-template-columns:1fr 1fr;gap:0 26px;list-style:none;padding:0;margin:0}
+.update-list li{
+  display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);
+  align-items:baseline;margin:0;
+}
+.update-list .time{
+  flex:0 0 76px;font-size:12px;color:var(--brand-3);font-variant-numeric:tabular-nums;
+}
+.update-list .txt{font-size:14px;color:var(--ink-2);min-width:0}
+.update-list .txt b{color:var(--ink);font-weight:700}
+
+/* ===== 分类入口 ===== */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-item{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 14px 12px;
+  background:linear-gradient(180deg,#fff,var(--panel-2));display:block;
+  transition:border-color .15s,transform .15s;
+}
+.cat-item:hover{border-color:var(--brand-3);transform:translateY(-2px)}
+.cat-item strong{display:block;font-size:15px;color:var(--brand);margin-bottom:4px}
+.cat-item span{font-size:12px;color:var(--ink-3);line-height:1.5;display:block}
+.cat-item em{font-style:normal;font-size:11px;color:var(--accent);display:block;margin-top:6px}
+
+/* ===== 深度解析 ===== */
+.deep h3{
+  font-size:17px;color:var(--brand);margin:22px 0 10px;padding-left:12px;
+  border-left:4px solid var(--accent);line-height:1.3;
+}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{font-size:15px;color:var(--ink-2);text-align:justify}
+.deep .compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px;
+}
+.compare-panel{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;
+  background:var(--panel-2);
+}
+.compare-panel h4{font-size:14px;color:var(--brand);margin-bottom:8px}
+.compare-panel ul{font-size:13px;color:var(--ink-2);margin:0;padding-left:16px}
+.compare-panel li{margin-bottom:5px}
+
+/* ===== 体验路径（编号步骤） ===== */
+.steps{list-style:none;padding:0;margin:0;counter-reset:step}
+.steps li{
+  position:relative;padding:0 0 18px 52px;counter-increment:step;
+  border-left:2px solid var(--line);margin-left:16px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:counter(step);position:absolute;left:-17px;top:-2px;
+  width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;
+  font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.steps h4{font-size:15px;color:var(--ink);margin-bottom:4px}
+.steps p{font-size:14px;color:var(--ink-3);margin:0}
+
+/* ===== FAQ ===== */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;
+  background:#fff;overflow:hidden;
+}
+.faq details[open]{border-color:var(--brand-3);box-shadow:var(--shadow)}
+.faq summary{
+  cursor:pointer;padding:13px 16px;font-size:15px;font-weight:600;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:18px;color:var(--brand-3);font-weight:400;flex:0 0 auto;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 16px 15px;font-size:14px;color:var(--ink-2);line-height:1.75}
+
+/* ===== 评论 ===== */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comment{
+  background:var(--panel-2);border-radius:var(--radius-sm);padding:12px 14px;
+  border:1px solid var(--line-2);
+}
+.comment .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;background:var(--brand-3);color:#fff;
+  font-size:12px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;
+  font-weight:700;
+}
+.comment .who b{font-size:13px;color:var(--ink)}
+.comment .who span{font-size:11px;color:var(--ink-3)}
+.comment p{font-size:13px;color:var(--ink-2);margin:0;line-height:1.65}
+
+/* ===== 资讯 ===== */
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.news-item{
+  display:flex;gap:12px;border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;background:#fff;
+}
+.news-item img{width:120px;height:100%;min-height:96px;object-fit:cover;flex:0 0 120px}
+.news-item .nb{padding:10px 12px 10px 0;min-width:0}
+.news-item h4{font-size:14px;margin-bottom:4px;line-height:1.45}
+.news-item .date{font-size:11px;color:var(--accent);margin-bottom:4px}
+.news-item p{font-size:12px;color:var(--ink-3);margin:0;line-height:1.6}
+
+/* ===== 相关推荐标签索引 ===== */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  font-size:13px;padding:6px 14px;border-radius:20px;background:var(--panel-2);
+  color:var(--ink-2);border:1px solid var(--line);
+}
+.tag-index a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* ===== 榜单 ===== */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank}
+.rank-list li{
+  display:flex;gap:14px;align-items:center;padding:11px 0;border-bottom:1px dashed var(--line);
+  counter-increment:rank;margin:0;
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rank);flex:0 0 26px;height:26px;border-radius:8px;
+  background:var(--panel-2);color:var(--brand);font-weight:800;font-size:13px;
+  display:flex;align-items:center;justify-content:center;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--accent);color:#fff}
+.rank-list .rk{flex:1;min-width:0;font-size:14px;color:var(--ink)}
+.rank-list .rk small{display:block;font-size:12px;color:var(--ink-3)}
+.rank-list .heat{font-size:12px;color:var(--accent);font-weight:700;flex:0 0 auto}
+
+/* ===== 时间线 ===== */
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{
+  display:grid;grid-template-columns:96px 1fr;gap:16px;padding-bottom:16px;
+  position:relative;margin:0;
+}
+.timeline li::before{
+  content:"";position:absolute;left:100px;top:6px;bottom:0;width:2px;background:var(--line);
+}
+.timeline li:last-child::before{display:none}
+.timeline .tl-date{font-size:13px;color:var(--brand-3);font-weight:700;text-align:right}
+.timeline .tl-body{position:relative;padding-left:16px}
+.timeline .tl-body::before{
+  content:"";position:absolute;left:-5px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:var(--brand-3);border:2px solid #fff;box-shadow:0 0 0 2px var(--panel-2);
+}
+.timeline h4{font-size:14px;margin-bottom:2px}
+.timeline p{font-size:13px;color:var(--ink-3);margin:0}
+
+/* ===== 页尾 ===== */
+.site-footer{
+  background:#0d3540;color:#b9d4d7;margin-top:14px;padding:40px 0 26px;font-size:13px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px;
+}
+.site-footer h4{font-size:14px;color:#fff;margin-bottom:12px}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{margin-bottom:7px}
+.site-footer a{color:#b9d4d7;font-size:13px}
+.site-footer a:hover{color:#fff;text-decoration:underline}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand .name{font-size:17px;font-weight:800;color:#fff}
+.footer-brand svg{width:30px;height:30px}
+.footer-note{font-size:12px;color:#8fb2b7;line-height:1.8}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:16px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:12px;color:#8fb2b7;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  :root{--w:96%;}
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:40px;padding-bottom:40px}
+  .hero h1{font-size:34px}
+  .hero-visual{order:-1;max-width:340px}
+  .layout{grid-template-columns:1fr;gap:20px}
+  .side-nav{position:static;order:2}
+  .side-nav ul{display:flex;flex-wrap:wrap;gap:6px}
+  .side-nav li{margin:0}
+  .main-col{order:1}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .main-nav{display:none}
+  .main-nav.open{
+    display:flex;position:absolute;top:calc(var(--notice-h) + var(--header-h));
+    left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;
+    padding:10px 16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg);
+    gap:2px;z-index:54;
+  }
+  .main-nav.open a{padding:10px;border-radius:8px}
+  .nav-toggle{display:block}
+  .search-box input{width:130px}
+}
+@media (max-width:740px){
+  .hero h1{font-size:28px}
+  .hero-stats{gap:18px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .update-list{grid-template-columns:1fr}
+  .comment-list,.comments{grid-template-columns:1fr}
+  .news-list{grid-template-columns:1fr}
+  .deep .compare{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .section{padding:20px 16px}
+  .search-box{display:none}
+  .header-tools .btn-ghost{padding:6px 12px;font-size:12px}
+  .timeline li{grid-template-columns:80px 1fr}
+  .timeline li::before{left:84px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <p>11 月 25 日新增《雪线之上》第 6 集与《潮汐之间》城市篇；本周共上线 14 条自然纪录与人文短片，创作者档案新增 9 位。</p>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="大象视频在线传媒首页">
+      <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#0f4c5c"/>
+        <path d="M11 26c0-6 3.6-11 9-11 4.6 0 8 3.2 8 7.4 0 3.6-2.6 6.4-6.2 6.4-2.8 0-4.8-1.8-4.8-4.2 0-2 1.5-3.5 3.4-3.5 1.6 0 2.8 1.1 2.8 2.6" stroke="#7fe0d3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <circle cx="12.5" cy="15.5" r="2.4" fill="#e8734a"/>
+        <path d="M24 9.5l4.5 3-4.5 3z" fill="#2fa3a3"/>
+      </svg>
+      <span class="name">大象视频在线传媒</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="/#overview">平台概览</a>
+      <a href="/#featured">精选节目</a>
+      <a href="/#updates">更新动态</a>
+      <a href="/#categories">节目分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看路径</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#rank">热度榜</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜索节目、创作者…" aria-label="搜索站内节目与创作者">
+        <div class="search-hint" id="searchHint" role="status" aria-live="polite"></div>
+      </div>
+      <button class="btn-ghost" type="button" id="joinBtn">创作者入驻</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="hero-eyebrow"><span class="dot"></span>自然纪录 · 城市人文 · 青年创作</span>
+      <h1>大象视频在线传媒</h1>
+      <p class="lead">以长镜头记录山川与街巷，用短片讲清一件事。这里汇集自然纪录、城市人文、美食探店、知识科普与青年创作五条内容线，节目条目、创作者档案与更新进度集中呈现，适合深度观看者与内容创作者查阅。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#featured">浏览精选节目</a>
+        <a class="btn-line" href="/#updates">查看今日更新</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>2,860+</strong>节目条目</div>
+        <div><strong>412</strong>创作者档案</div>
+        <div><strong>5</strong>内容主线</div>
+        <div><strong>每日</strong>更新进度</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 320" role="img" aria-label="大象视频节目画面构成示意">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7fe0d3"/><stop offset="1" stop-color="#2fa3a3"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#e8734a"/><stop offset="1" stop-color="#f4a17c"/>
+          </linearGradient>
+        </defs>
+        <rect x="16" y="26" width="300" height="184" rx="14" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.3)"/>
+        <rect x="32" y="42" width="268" height="130" rx="8" fill="url(#g1)" opacity=".9"/>
+        <path d="M32 148l58-52 46 38 54-58 62 72v24H32z" fill="#0d3f4c" opacity=".55"/>
+        <circle cx="250" cy="78" r="16" fill="#fdf0d5" opacity=".9"/>
+        <rect x="32" y="182" width="120" height="8" rx="4" fill="rgba(255,255,255,.5)"/>
+        <rect x="32" y="196" width="76" height="8" rx="4" fill="rgba(255,255,255,.3)"/>
+        <g transform="translate(246,150)">
+          <rect width="156" height="96" rx="12" fill="#0b2f39" stroke="rgba(255,255,255,.28)"/>
+          <rect x="14" y="14" width="128" height="10" rx="5" fill="url(#g2)"/>
+          <rect x="14" y="34" width="96" height="8" rx="4" fill="rgba(255,255,255,.5)"/>
+          <rect x="14" y="50" width="112" height="8" rx="4" fill="rgba(255,255,255,.3)"/>
+          <rect x="14" y="66" width="72" height="8" rx="4" fill="rgba(255,255,255,.3)"/>
+        </g>
+        <g transform="translate(40,228)">
+          <rect width="340" height="58" rx="12" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.24)"/>
+          <circle cx="30" cy="29" r="13" fill="none" stroke="#7fe0d3" stroke-width="2.4"/>
+          <path d="M26 23l10 6-10 6z" fill="#7fe0d3"/>
+          <rect x="56" y="18" width="180" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+          <rect x="56" y="32" width="118" height="7" rx="3.5" fill="rgba(255,255,255,.3)"/>
+          <rect x="272" y="18" width="52" height="22" rx="11" fill="#e8734a"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 主布局：左侧单栏 -->
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左侧频道导航 -->
+    <aside class="side-nav" aria-label="频道导航">
+      <h2>频道索引</h2>
+      <ul>
+        <li><a href="/#overview" class="active">平台概览</a></li>
+        <li><a href="/#featured">精选节目</a></li>
+        <li><a href="/#updates">更新动态</a></li>
+        <li><a href="/#categories">节目分类</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">观看路径</a></li>
+        <li><a href="/#comments">观众评论</a></li>
+        <li><a href="/#news">行业资讯</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#rank">热度榜</a></li>
+        <li><a href="/#timeline">上线时间线</a></li>
+        <li><a href="/#related">延伸方向</a></li>
+      </ul>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="main-col">
+
+      <!-- 1 平台概览 -->
+      <section class="section overview anchor-offset" id="overview">
+        <div class="section-head">
+          <h2><span class="num">01 / 领域概览</span>自然纪录与城市人文的内容版图</h2>
+        </div>
+        <p>大象视频在线传媒的内容体系围绕“可长时间观看”与“可被检索”两条原则搭建。自然纪录线以《雪线之上》《潮汐之间》为代表，采用四季跟拍与延时摄影，单集体量在 24 至 38 分钟之间；城市人文线聚焦具体街区与职业，例如《凌晨四点的菜市场》《修表铺的第三十年》，用人物日常串起城市记忆。</p>
+        <p>美食探店线倾向于小体量高频更新，单条 6 至 12 分钟，强调店铺地址、招牌菜与营业时段三项可验证信息；知识科普线以“一事一集”为结构，涵盖天文观测、地质剖面、方言音系等方向；青年创作线面向高校与独立团队，收录实验短片、定格动画与纪录短片，季度更新一次合集。</p>
+        <p>当前值得关注的具体内容集中在三处：一是冬季高原纪录《雪线之上》进入第六集，镜头转向牧道迁徙；二是《潮汐之间》推出城市内河篇，讨论潮汐与排涝系统的关系；三是青年创作合集第 12 期上线，收录 7 部 15 分钟以内的短片，其中 3 部为纪录方向。</p>
+        <p class="highlight">若你是第一次接触该平台，可先按“自然纪录 → 城市人文 → 知识科普”的顺序观看：自然纪录负责建立画面标准，城市人文提供叙事样本，知识科普补足信息密度。</p>
+      </section>
+
+      <!-- 2 精选节目 -->
+      <section class="section anchor-offset" id="featured">
+        <div class="section-head">
+          <h2><span class="num">02 / 精选节目</span>本季值得投入时间的 9 个条目</h2>
+          <span class="more">按内容线分布</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="thumb"><span class="type">自然纪录</span><img src="https://picsum.photos/seed/daxiang-xueshan06/400/300" width="400" height="300" loading="lazy" alt="雪线之上第六集高原牧道画面"></div>
+            <div class="body">
+              <h3>雪线之上 第 6 集：牧道迁徙</h3>
+              <div class="tags"><span>高原</span><span>四季跟拍</span><span>长镜头</span></div>
+              <p class="desc">跟拍一支牧民家庭在海拔 4300 米处的秋季转场，全片使用自然光，包含 12 分钟无解说段落，适合关注纪实摄影的观众。</p>
+              <div class="meta"><span>11-25 更新</span><span class="score">9.2</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">自然纪录</span><img src="https://picsum.photos/seed/daxiang-chaoxi04/400/300" width="400" height="300" loading="lazy" alt="潮汐之间城市内河篇水面镜头"></div>
+            <div class="body">
+              <h3>潮汐之间：城市内河篇</h3>
+              <div class="tags"><span>水域</span><span>城市地理</span><span>延时</span></div>
+              <p class="desc">以一条穿城内河为线索，记录潮位变化对排涝、航运与沿岸生活的影响，含 8 组潮汐延时与 3 位水务工作人员访谈。</p>
+              <div class="meta"><span>11-24 上线</span><span class="score">8.9</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">城市人文</span><img src="https://picsum.photos/seed/daxiang-caishi09/400/300" width="400" height="300" loading="lazy" alt="凌晨四点的菜市场摊主画面"></div>
+            <div class="body">
+              <h3>凌晨四点的菜市场</h3>
+              <div class="tags"><span>街区</span><span>职业</span><span>口述</span></div>
+              <p class="desc">连续 7 天凌晨蹲守同一家批发市场，记录卸货、分拣、开市三个环节，重点呈现摊主之间的价格协商方式。</p>
+              <div class="meta"><span>11-21 上线</span><span class="score">8.7</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">城市人文</span><img src="https://picsum.photos/seed/daxiang-xiubiao03/400/300" width="400" height="300" loading="lazy" alt="修表铺老师傅工作台画面"></div>
+            <div class="body">
+              <h3>修表铺的第三十年</h3>
+              <div class="tags"><span>手艺</span><span>老店铺</span><span>长镜头</span></div>
+              <p class="desc">一家 12 平方米修表铺的三十年变迁，镜头停留在拆解与装配的完整流程上，配以店主对手表型号的记忆。</p>
+              <div class="meta"><span>11-18 上线</span><span class="score">9.0</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">美食探店</span><img src="https://picsum.photos/seed/daxiang-meishi17/400/300" width="400" height="300" loading="lazy" alt="夜市小吃摊招牌菜特写"></div>
+            <div class="body">
+              <h3>夜市 30 摊：招牌菜怎么点</h3>
+              <div class="tags"><span>夜市</span><span>营业时段</span><span>人均</span></div>
+              <p class="desc">走访 30 个夜市摊位，逐条记录招牌菜、出餐时间与人均价格，附摊主自述的食材采购渠道，便于按图索骥。</p>
+              <div class="meta"><span>11-23 上线</span><span class="score">8.5</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">知识科普</span><img src="https://picsum.photos/seed/daxiang-dizhi11/400/300" width="400" height="300" loading="lazy" alt="地质剖面讲解画面"></div>
+            <div class="body">
+              <h3>一条公路的地质剖面</h3>
+              <div class="tags"><span>地质</span><span>图解</span><span>实地讲解</span></div>
+              <p class="desc">沿 68 公里山区公路逐段讲解岩层走向与断层痕迹，配剖面示意图与取样过程，适合地理爱好者作为入门材料。</p>
+              <div class="meta"><span>11-20 上线</span><span class="score">9.1</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">知识科普</span><img src="https://picsum.photos/seed/daxiang-fangyan07/400/300" width="400" height="300" loading="lazy" alt="方言音系记录现场画面"></div>
+            <div class="body">
+              <h3>方言音系：三种声调的差别</h3>
+              <div class="tags"><span>语言学</span><span>录音</span><span>对照</span></div>
+              <p class="desc">用同一段文本对比三地发音，展示声调、入声与连读差异，附录音波形与发音人年龄信息，便于语言学习者对照。</p>
+              <div class="meta"><span>11-16 上线</span><span class="score">8.8</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">青年创作</span><img src="https://picsum.photos/seed/daxiang-qingnian12/400/300" width="400" height="300" loading="lazy" alt="青年创作合集定格动画画面"></div>
+            <div class="body">
+              <h3>青年创作合集 第 12 期</h3>
+              <div class="tags"><span>短片</span><span>定格动画</span><span>纪录方向</span></div>
+              <p class="desc">收录 7 部 15 分钟以内作品，含 2 部定格动画与 3 部纪录短片，每部附导演自述与拍摄周期说明。</p>
+              <div class="meta"><span>11-22 上线</span><span class="score">8.6</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><span class="type">自然纪录</span><img src="https://picsum.photos/seed/daxiang-houbird05/400/300" width="400" height="300" loading="lazy" alt="候鸟迁徙湿地画面"></div>
+            <div class="body">
+              <h3>候鸟停歇的七天</h3>
+              <div class="tags"><span>湿地</span><span>鸟类</span><span>观测</span></div>
+              <p class="desc">在迁徙季连续 7 天记录同一片湿地的候鸟数量变化，含观鸟点位、最佳时段与望远镜参数建议。</p>
+              <div class="meta"><span>11-14 上线</span><span class="score">9.0</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 更新动态 -->
+      <section class="section anchor-offset" id="updates">
+        <div class="section-head">
+          <h2><span class="num">03 / 更新动态</span>今日与本周上线进度</h2>
+          <span class="more">11-25 09:30 汇总</span>
+        </div>
+        <ul class="update-list">
+          <li><span class="time">今天 09:30</span><span class="txt"><b>《雪线之上》第 6 集</b>已上线，时长 34 分钟，含无解说长镜头段落。</span></li>
+          <li><span class="time">今天 08:10</span><span class="txt"><b>《潮汐之间》城市内河篇</b>补充第 2 段潮汐延时素材，画面更新至 4K。</span></li>
+          <li><span class="time">昨天 21:10</span><span class="txt"><b>青年创作合集 第 12 期</b>新增导演自述音频，共 7 段。</span></li>
+          <li><span class="time">昨天 18:40</span><span class="txt"><b>《夜市 30 摊》</b>第 4 批摊位上线条目更新，新增 8 个夜市点位。</span></li>
+          <li><span class="time">11-24 20:00</span><span class="txt"><b>创作者档案</b>新增 9 位，含 3 位自然纪录摄影师与 2 位定格动画作者。</span></li>
+          <li><span class="time">11-23 15:20</span><span class="txt"><b>《一条公路的地质剖面》</b>上线配套剖面示意图高清版。</span></li>
+          <li><span class="time">11-22 11:00</span><span class="txt"><b>知识科普线</b>新增“方言音系”专题页，收录 5 集内容。</span></li>
+          <li><span class="time">11-21 19:30</span><span class="txt"><b>《凌晨四点的菜市场》</b>上线，同步开放拍摄手记长文。</span></li>
+          <li><span class="time">11-20 10:15</span><span class="txt"><b>自然纪录线</b>冬季片单更新，新增 6 个高原与湿地条目。</span></li>
+          <li><span class="time">11-18 16:45</span><span class="txt"><b>《修表铺的第三十年》</b>上线，附拆解装配全流程时间码。</span></li>
+          <li><span class="time">11-16 09:00</span><span class="txt"><b>平台排播调整</b>：自然纪录线固定每周二、周五更新。</span></li>
+          <li><span class="time">11-14 20:20</span><span class="txt"><b>《候鸟停歇的七天》</b>上线，附观鸟点位与时段建议表。</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section anchor-offset" id="categories">
+        <div class="section-head">
+          <h2><span class="num">04 / 节目分类</span>按内容方向查找条目</h2>
+        </div>
+        <p class="section-sub">分类与节目条目一一对应，点击进入对应内容线，可继续按更新时间与评分排序。</p>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#featured"><strong>自然纪录</strong><span>高原、湿地、水域与四季跟拍，单集 24—38 分钟。</span><em>68 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>城市人文</strong><span>街区、老店铺与职业口述，强调人物日常。</span><em>94 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>美食探店</strong><span>夜市、街边小店与招牌菜，附营业时段与人均。</span><em>126 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>知识科普</strong><span>地质、天文、方言与器物原理，一事一集。</span><em>73 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>青年创作</strong><span>实验短片、定格动画与纪录短片，季度合集。</span><em>52 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>手艺与器物</strong><span>修表、木作、制陶等流程记录，附工具说明。</span><em>41 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>城市夜行</strong><span>夜间交通、24 小时店铺与夜班职业观察。</span><em>37 个条目</em></a>
+          <a class="cat-item" href="/#featured"><strong>拍摄手记</strong><span>机位、参数、剪辑节奏与取材方法的文字记录。</span><em>58 篇</em></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section deep anchor-offset" id="deep">
+        <div class="section-head">
+          <h2><span class="num">05 / 深度解析</span>自然纪录与城市人文的差别在哪里</h2>
+        </div>
+        <p>很多观众把自然纪录与城市人文混为一种“慢片”，但两者在取材方式、信息密度与观看门槛上差别明显。理解这些差别，能帮助你在有限时间里选到更合适的条目，也能避免看到一半发现节奏不对而放弃。</p>
+
+        <h3>取材方式：等待与跟随</h3>
+        <p>自然纪录的核心成本是等待。像《雪线之上》这样的高原题材，摄制组通常需要在同一地点驻留数周，等云层、等动物、等光线。因此这类条目的画面质量高，但叙事推进慢，信息点分散在画面上，需要观众自己观察。</p>
+        <p>城市人文更多是跟随。以《凌晨四点的菜市场》为例，摄制者连续 7 天跟着同一批摊主，记录他们固定的作息与协商方式。叙事依赖人物口述与日常重复，画面不一定精致，但事件密度更高，几乎每两分钟就有一个可记住的细节。</p>
+
+        <h3>信息密度与观看门槛</h3>
+        <div class="compare">
+          <div class="compare-panel">
+            <h4>自然纪录：看画面</h4>
+            <ul>
+              <li>单集 24—38 分钟，常含无解说段落</li>
+              <li>建议大屏观看，注意景别与光线变化</li>
+              <li>适合碎片时间外整段投入</li>
+              <li>评分集中在 8.8—9.2 区间</li>
+            </ul>
+          </div>
+          <div class="compare-panel">
+            <h4>城市人文：听讲述</h4>
+            <ul>
+              <li>单集 18—30 分钟，口述占比高</li>
+              <li>可边听边做其他事，信息不依赖画面</li>
+              <li>适合通勤、家务等半注意力场景</li>
+              <li>评分区间更宽，8.2—9.0</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>判断一个条目值不值得投入时间</h3>
+        <p>可以先看三个具体信号，而不是只看评分。第一，看是否有“拍摄周期说明”——自然纪录线通常标注驻留天数与拍摄季节，周期越具体，成片可信度越高。第二，看是否提供“时间码目录”，城市人文线若给出关键人物出场时间，说明剪辑有清晰结构。第三，看条目是否附“取材范围”，例如《夜市 30 摊》明确写出走访批次与点位数量，这类信息能反映内容完整度。</p>
+        <p>反过来，如果条目只有一句概述、没有拍摄周期、也没有任何可验证的具体信息，通常属于试播或先导片段，适合快速浏览而不适合作为深度观看对象。</p>
+
+        <h3>知识科普线为什么值得单独看</h3>
+        <p>知识科普线采用“一事一集”结构，例如《一条公路的地质剖面》把 68 公里路程拆成若干岩层段落，每段配一张剖面示意图；《方言音系：三种声调的差别》则用同一段文本反复对比发音。这类条目的价值不在画面，而在于提供了可反复对照的结构，适合作为学习材料收藏。</p>
+        <p>观看时建议打开配套图文，尤其是地质与语言类内容，纯靠听容易丢失关键对照关系。平台在条目页提供了示意图与录音波形，属于正文的一部分，不应跳过。</p>
+
+        <h3>青年创作线的定位</h3>
+        <p>青年创作合集每季度更新，单部作品时长多在 15 分钟以内，题材跨度大。第 12 期收录 7 部作品，其中 2 部定格动画、3 部纪录短片。这条线的价值在于观察拍摄手法的尝试，而不是追求完成度。适合已经熟悉前四条内容线、想看看不同表达方式的观众。</p>
+      </section>
+
+      <!-- 6 观看路径 -->
+      <section class="section anchor-offset" id="guide">
+        <div class="section-head">
+          <h2><span class="num">06 / 观看路径</span>从哪一条开始，按什么顺序推进</h2>
+        </div>
+        <p class="section-sub">以下顺序按“先建立画面标准，再补充信息密度”的逻辑排列，适合首次系统观看的观众。</p>
+        <ol class="steps">
+          <li>
+            <h4>先看一集高原自然纪录，建立画面标准</h4>
+            <p>推荐《雪线之上》第 6 集。用大屏整段看完，注意无解说段落的景别切换，这会成为你判断其他条目画面质量的参照。</p>
+          </li>
+          <li>
+            <h4>接着看一集城市人文，感受叙事节奏</h4>
+            <p>推荐《修表铺的第三十年》。重点看拆解与装配流程如何被完整保留，理解“跟随式记录”与“等待式记录”的差别。</p>
+          </li>
+          <li>
+            <h4>用知识科普补足信息密度</h4>
+            <p>选《一条公路的地质剖面》，配合剖面示意图观看。若对语言感兴趣，可换成《方言音系：三种声调的差别》，两集都属于可反复对照的类型。</p>
+          </li>
+          <li>
+            <h4>按需进入美食探店与城市夜行</h4>
+            <p>这两条线偏实用。《夜市 30 摊》适合按点位直接去试；城市夜行线适合想了解夜间职业的观众，单集较短，可连续观看。</p>
+          </li>
+          <li>
+            <h4>最后浏览青年创作合集</h4>
+            <p>第 12 期的 7 部短片建议分开看，每部之间留出间隔。重点看导演自述，理解拍摄周期与取舍，而不是追求完成度。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section faq anchor-offset" id="faq">
+        <div class="section-head">
+          <h2><span class="num">07 / 常见问题</span>关于条目、更新与选择的 6 个问题</h2>
+        </div>
+        <details>
+          <summary>自然纪录线一般多久更新一集？</summary>
+          <div class="ans">目前固定每周二、周五更新，高原与湿地题材受拍摄季节影响，冬季可能调整为每周一集。具体进度以更新动态页的时间为准，条目页也会标注下一集上线日期。</div>
+        </details>
+        <details>
+          <summary>《雪线之上》和《潮汐之间》有什么区别？</summary>
+          <div class="ans">前者属于高原跟拍，强调四季变化与牧道迁徙，单集 30 分钟以上，含较多无解说段落；后者属于水域题材，关注潮汐与城市排涝、航运的关系，节奏更快，配有工作人员访谈与延时素材。两者都属于自然纪录线，但观看场景不同。</div>
+        </details>
+        <details>
+          <summary>第一次接触，从哪个条目开始看比较好？</summary>
+          <div class="ans">如果偏好画面，建议从《雪线之上》第 6 集开始；如果偏好人物故事，从《修表铺的第三十年》开始更合适；如果想快速了解平台风格，可先看 15 分钟左右的《候鸟停歇的七天》。</div>
+        </details>
+        <details>
+          <summary>城市人文类条目的评判标准通常是什么？</summary>
+          <div class="ans">主要看三点：人物口述是否具体到时间、地点与做法；是否有连续多日的记录而非单次拍摄；是否提供拍摄手记或时间码目录。三点都具备的条目，信息密度通常更高。</div>
+        </details>
+        <details>
+          <summary>美食探店条目里的营业时段和人均价格可靠吗？</summary>
+          <div class="ans">条目上线时会标注采集日期，例如《夜市 30 摊》第 4 批数据采集于 11 月 23 日。摊位营业时段可能随季节调整，建议出发前以现场公示为准，人均价格按招牌菜估算。</div>
+        </details>
+        <details>
+          <summary>青年创作合集多久更新一次，作品能单独看吗？</summary>
+          <div class="ans">合集按季度更新，第 12 期于 11 月 22 日上线。每部作品都可单独观看，条目页附导演自述与拍摄周期，按单部浏览不影响理解。</div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section anchor-offset" id="comments">
+        <div class="section-head">
+          <h2><span class="num">08 / 观众评论</span>14 条关于具体条目的讨论</h2>
+          <span class="more">截至 11-25</span>
+        </div>
+        <div class="comments">
+          <div class="comment"><div class="who"><span class="avatar">山</span><b>山口的风</b><span>11-25</span></div><p>《雪线之上》第 6 集那段无解说长镜头确实顶得住，就是前十分钟节奏有点慢，差点切走。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">阿</span><b>阿岚看片</b><span>11-25</span></div><p>潮汐那集讲排涝的部分比想象中硬核，本来以为是风景片，结果学到了不少城市水系知识。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">修</span><b>修表铺常客</b><span>11-24</span></div><p>《修表铺的第三十年》把拆解流程完整放出来，很难得。就是希望以后能加上零件型号字幕。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">夜</span><b>夜班小林</b><span>11-24</span></div><p>夜市那期按点位去试了三家，招牌菜和人均基本对得上，出餐时间比标的长一点。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">地</span><b>地质系老周</b><span>11-23</span></div><p>公路剖面那集配图很实用，剖面示意图比讲解还清楚，建议以后都标配。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">方</span><b>方言收集者</b><span>11-23</span></div><p>三种声调对比做得好，但发音人年龄没有标注在同一屏，来回切有点麻烦。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">候</span><b>候鸟观察员</b><span>11-22</span></div><p>湿地那集的观鸟点位写得很细，按建议时段去确实看到了集群起飞。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">定</span><b>定格小队长</b><span>11-22</span></div><p>第 12 期两部定格动画的拍摄周期都写了，这对我自己做短片很有参考价值。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">菜</span><b>菜市场王姐</b><span>11-21</span></div><p>凌晨四点那集拍得真实，就是镜头有点晃，看久了眼睛累。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">通</span><b>通勤听片人</b><span>11-21</span></div><p>城市人文这类很适合上下班听，画面不看也不影响理解，比纯音频节目多了环境声。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">评</span><b>评分党老陈</b><span>11-20</span></div><p>自然纪录线评分普遍偏高，9 分以上的有六七个，建议把评分维度拆开看，不要只看总分。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">新</span><b>新手小赵</b><span>11-19</span></div><p>按观看路径的顺序看了三集，确实比随便点开好，先看高原那集再回来看城市人文，感受完全不同。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">夜</span><b>夜行观察</b><span>11-18</span></div><p>城市夜行线更新偏慢，希望 24 小时店铺那类题材能多一些。</p></div>
+          <div class="comment"><div class="who"><span class="avatar">器</span><b>器物爱好者</b><span>11-17</span></div><p>手艺与器物分类里木作那几集工具说明很全，比同类内容细，就是条目不多。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section anchor-offset" id="news">
+        <div class="section-head">
+          <h2><span class="num">09 / 相关资讯</span>11 月内容线与排播变化</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news01/600/400" width="600" height="400" loading="lazy" alt="自然纪录冬季片单发布现场">
+            <div class="nb">
+              <div class="date">2026-11-25</div>
+              <h4>自然纪录线冬季片单新增 6 个高原与湿地条目</h4>
+              <p>新增条目包含 2 部高原跟拍与 4 部湿地观察，均标注拍摄周期与取样时间。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news02/600/400" width="600" height="400" loading="lazy" alt="青年创作合集第十二期封面">
+            <div class="nb">
+              <div class="date">2026-11-24</div>
+              <h4>青年创作合集第 12 期上线 7 部短片</h4>
+              <p>含 2 部定格动画与 3 部纪录短片，每部附导演自述与拍摄周期说明。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news03/600/400" width="600" height="400" loading="lazy" alt="方言音系专题页界面">
+            <div class="nb">
+              <div class="date">2026-11-22</div>
+              <h4>“方言音系”专题页上线，收录 5 集内容</h4>
+              <p>专题整合声调对比、录音波形与发音人信息，支持按地区筛选。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news04/600/400" width="600" height="400" loading="lazy" alt="菜市场拍摄手记长文配图">
+            <div class="nb">
+              <div class="date">2026-11-21</div>
+              <h4>《凌晨四点的菜市场》开放拍摄手记长文</h4>
+              <p>手记记录了 7 天蹲守的机位安排与取材取舍，附现场录音片段。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news05/600/400" width="600" height="400" loading="lazy" alt="创作者档案新增页面">
+            <div class="nb">
+              <div class="date">2026-11-20</div>
+              <h4>创作者档案新增 9 位，自然纪录摄影师占 3 位</h4>
+              <p>新增档案含驻留地区、常用器材与代表条目，可按内容线检索。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/daxiang-news06/600/400" width="600" height="400" loading="lazy" alt="平台排播调整公告图">
+            <div class="nb">
+              <div class="date">2026-11-16</div>
+              <h4>自然纪录线排播调整：固定每周二、周五更新</h4>
+              <p>调整后高原与湿地题材交替上线，单集时长维持在 24—38 分钟。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section anchor-offset" id="related">
+        <div class="section-head">
+          <h2><span class="num">10 / 延伸方向</span>从当前条目继续延伸的 8 个方向</h2>
+        </div>
+        <p class="section-sub">不同于精选节目，这里给出的是可继续挖掘的内容方向与对照条目，适合看完一部后顺着往下找。</p>
+        <div class="tag-index">
+          <a href="/#featured">高原四季跟拍</a>
+          <a href="/#featured">湿地候鸟观测</a>
+          <a href="/#featured">城市水系与潮汐</a>
+          <a href="/#featured">老店铺口述史</a>
+          <a href="/#featured">夜市点位地图</a>
+          <a href="/#featured">地质剖面图解</a>
+          <a href="/#featured">方言声调对照</a>
+          <a href="/#featured">定格动画拍摄周期</a>
+        </div>
+      </section>
+
+      <!-- 11 热度榜 -->
+      <section class="section anchor-offset" id="rank">
+        <div class="section-head">
+          <h2><span class="num">11 / 热度榜</span>本周播放与完播综合排序</h2>
+          <span class="more">11-19 至 11-25</span>
+        </div>
+        <ol class="rank-list">
+          <li><span class="rk">雪线之上 第 6 集：牧道迁徙<small>自然纪录 · 34 分钟</small></span><span class="heat">9.2</span></li>
+          <li><span class="rk">修表铺的第三十年<small>城市人文 · 27 分钟</small></span><span class="heat">9.0</span></li>
+          <li><span class="rk">一条公路的地质剖面<small>知识科普 · 22 分钟</small></span><span class="heat">9.1</span></li>
+          <li><span class="rk">候鸟停歇的七天<small>自然纪录 · 19 分钟</small></span><span class="heat">9.0</span></li>
+          <li><span class="rk">潮汐之间：城市内河篇<small>自然纪录 · 31 分钟</small></span><span class="heat">8.9</span></li>
+          <li><span class="rk">方言音系：三种声调的差别<small>知识科普 · 17 分钟</small></span><span class="heat">8.8</span></li>
+          <li><span class="rk">凌晨四点的菜市场<small>城市人文 · 25 分钟</small></span><span class="heat">8.7</span></li>
+          <li><span class="rk">青年创作合集 第 12 期<small>青年创作 · 合集</small></span><span class="heat">8.6</span></li>
+        </ol>
+      </section>
+
+      <!-- 12 上线时间线 -->
+      <section class="section anchor-offset" id="timeline">
+        <div class="section-head">
+          <h2><span class="num">12 / 上线时间线</span>近两周条目与档案变化</h2>
+        </div>
+        <ul class="timeline">
+          <li><span class="tl-date">11-25</span><div class="tl-body"><h4>《雪线之上》第 6 集上线</h4><p>牧道迁徙主题，含 12 分钟无解说段落。</p></div></li>
+          <li><span class="tl-date">11-24</span><div class="tl-body"><h4>《潮汐之间》城市内河篇上线</h4><p>补充潮汐延时素材，更新至 4K 画质。</p></div></li>
+          <li><span class="tl-date">11-23</span><div class="tl-body"><h4>《夜市 30 摊》第 4 批点位上线条目</h4><p>新增 8 个夜市点位与人均价格。</p></div></li>
+          <li><span class="tl-date">11-22</span><div class="tl-body"><h4>青年创作合集第 12 期上线</h4><p>7 部短片，含 2 部定格动画与 3 部纪录短片。</p></div></li>
+          <li><span class="tl-date">11-21</span><div class="tl-body"><h4>《凌晨四点的菜市场》上线</h4><p>同步开放 7 天蹲守的拍摄手记长文。</p></div></li>
+          <li><span class="tl-date">11-20</span><div class="tl-body"><h4>创作者档案新增 9 位</h4><p>含驻留地区与常用器材信息，可按内容线检索。</p></div></li>
+          <li><span class="tl-date">11-18</span><div class="tl-body"><h4>《修表铺的第三十年》上线</h4><p>附拆解装配全流程时间码，便于按段查看。</p></div></li>
+          <li><span class="tl-date">11-16</span><div class="tl-body"><h4>自然纪录线排播调整生效</h4><p>固定每周二、周五更新，高原与湿地题材交替。</p></div></li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer" id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#125a68"/>
+            <path d="M11 26c0-6 3.6-11 9-11 4.6 0 8 3.2 8 7.4 0 3.6-2.6 6.4-6.2 6.4-2.8 0-4.8-1.8-4.8-4.2 0-2 1.5-3.5 3.4-3.5 1.6 0 2.8 1.1 2.8 2.6" stroke="#7fe0d3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="12.5" cy="15.5" r="2.4" fill="#e8734a"/>
+          </svg>
+          <span class="name">大象视频在线传媒</span>
+        </div>
+        <p class="footer-note">以长镜头记录山川与街巷，用短片讲清一件事。自然纪录、城市人文、美食探店、知识科普与青年创作五条内容线持续更新。</p>
+      </div>
+      <div>
+        <h4>内容线</h4>
+        <ul>
+          <li><a href="/#featured">自然纪录</a></li>
+          <li><a href="/#featured">城市人文</a></li>
+          <li><a href="/#featured">美食探店</a></li>
+          <li><a href="/#featured">知识科普</a></li>
+          <li><a href="/#featured">青年创作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="/#updates">更新动态</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看路径</a></li>
+          <li><a href="/#rank">热度榜</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#timeline">上线时间线</a></li>
+          <li><a href="/#related">延伸方向</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>条目评分与热度为站内示例数据，采集与统计口径见各条目页说明。</span>
+      <span>© 2026 大象视频在线传媒 · 内容版权归各创作者所有</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 移动端导航
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 侧栏当前项高亮
+  var sections = document.querySelectorAll('main section[id]');
+  var sideLinks = document.querySelectorAll('.side-nav a');
+  if('IntersectionObserver' in window && sections.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          sideLinks.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '/#' + en.target.id);
+          });
+        }
+      });
+    }, {rootMargin:'-30% 0px -60% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  // 本地搜索
+  var input = document.getElementById('siteSearch');
+  var hint = document.getElementById('searchHint');
+  if(input && hint){
+    var data = [];
+    document.querySelectorAll('.card h3, .card .desc, .update-list .txt, .rank-list .rk, .faq summary, .news-item h4, .cat-item strong, .timeline h4').forEach(function(el){
+      var text = el.textContent.replace(/\s+/g,' ').trim();
+      if(text) data.push({text:text, el:el});
+    });
+    var render = function(kw){
+      hint.innerHTML = '';
+      if(!kw){ hint.classList.remove('show'); return; }
+      var hits = data.filter(function(d){ return d.text.indexOf(kw) > -1; }).slice(0,6);
+      if(!hits.length){
+        hint.innerHTML = '<div class="empty">未找到与“' + kw.replace(/[<>&]/g,'') + '”相关的内容</div>';
+        hint.classList.add('show');
+        return;
+      }
+      hits.forEach(function(h){
+        var d = document.createElement('div');
+        d.className = 'res';
+        d.textContent = h.text.length > 30 ? h.text.slice(0,30) + '…' : h.text;
+        d.addEventListener('click', function(){
+          var target = h.el.closest('section');
+          if(target){ location.hash = '#' + target.id; }
+          hint.classList.remove('show');
+          input.value = '';
+        });
+        hint.appendChild(d);
+      });
+      hint.classList.add('show');
+    };
+    input.addEventListener('input', function(){ render(input.value.trim()); });
+    input.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ hint.classList.remove('show'); input.blur(); } });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.search-box')) hint.classList.remove('show');
+    });
+  }
+
+  // 创作者入驻提示
+  var join = document.getElementById('joinBtn');
+  if(join){
+    join.addEventListener('click', function(){
+      alert('创作者入驻通道将于每周一开放提交，当前可先查看创作者档案了解收录标准。');
+    });
+  }
+})();
+</script>
+</body>
+  </html>
